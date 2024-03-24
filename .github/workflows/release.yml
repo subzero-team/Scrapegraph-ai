@@ -39,6 +39,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     needs: build
+    environment: development
     if: github.event.pull_request.merged == true && (github.event.pull_request.base.ref == 'main' || github.event.pull_request.base.ref == 'pre/beta')
     container:
       image: nikolaik/python-nodejs:python3.9-nodejs20-alpine
@@ -70,4 +71,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-        run: npx semantic-release
+        run: npx semantic-release --dry-run
