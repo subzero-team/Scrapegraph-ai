@@ -80,5 +80,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
-          ls
+          ls -la
           npx semantic-release --dry-run --debug
