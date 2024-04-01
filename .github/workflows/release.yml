@@ -57,7 +57,7 @@ jobs:
           apk update
           apk upgrade
           apk add git
-          git config --system user.name "${{github.repository_owner}}"
+#          git config --system user.name "${{github.repository_owner}}"
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -80,6 +80,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
-          ls -la
           git remote set-url origin ${{github.repositoryUrl}}
           npx semantic-release --dry-run --debug
