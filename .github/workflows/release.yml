@@ -1,0 +1,78 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+      - pre/*
+  pull_request: 
+    types: [closed]
+
+permissions:
+  contents: write # for checkout
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    container:
+      image: nikolaik/python-nodejs:python3.9-nodejs20-alpine
+    steps:
+      - name: Install Python dependencies
+        run: pip install poetry
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Build app
+        run: poetry build
+        working-directory: ./dist
+        id: build_cache
+        if: success()
+      - name: Cache build
+        uses: actions/cache@v2
+        with:
+          path: ./dist
+          key: ${{ runner.os }}-build-${{ hashFiles('dist/**') }}
+        if: steps.build_cache.outputs.id != ''
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: build
+    environment: development
+    if: | 
+        github.event_name == 'push' && github.ref == 'refs/heads/main' || 
+        github.event_name == 'push' && startsWith(github.ref,'refs/heads/pre') || 
+        github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && github.event.pull_request.base.ref == 'main' || 
+        github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && startsWith(github.event.pull_request.base.ref,  'refs/head/pre')
+    container:
+      image: nikolaik/python-nodejs:python3.9-nodejs20-alpine
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Restore cached build
+        uses: actions/cache@v2
+        with:
+            path: ./dist
+            key: ${{ runner.os }}-build-${{ hashFiles('dist/**') }}
+      - name: Restore cached node modules
+        uses: actions/cache@v2
+        with:
+            path: ./node_modules
+            key: ${{ runner.os }}-release-${{ hashFiles('node_modules/**') }}
+      - name: Install node dependencies
+        run: npm install semantic-release-pypi @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github @semantic-release/changelog conventional-changelog-conventionalcommits --no-save
+        working-directory: ./node_modules
+        if: success()
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: npx semantic-release --dry-run
