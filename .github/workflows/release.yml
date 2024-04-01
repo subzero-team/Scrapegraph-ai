@@ -25,7 +25,6 @@ jobs:
           fetch-depth: 0
       - name: Build app
         run: poetry build
-        working-directory: ./dist
         id: build_cache
         if: success()
       - name: Cache build
@@ -69,7 +68,6 @@ jobs:
             key: ${{ runner.os }}-release-${{ hashFiles('node_modules/**') }}
       - name: Install node dependencies
         run: npm install semantic-release-pypi @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github @semantic-release/changelog conventional-changelog-conventionalcommits --no-save
-        working-directory: ./node_modules
         if: success()
       - name: Release
         env:
