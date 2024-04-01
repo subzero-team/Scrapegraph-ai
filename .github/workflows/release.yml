@@ -58,7 +58,6 @@ jobs:
           apk upgrade
           apk add git
           git config --system user.name "${{github.repository_owner}}"
-          git confi
       - name: Checkout
         uses: actions/checkout@v4
         with:
