@@ -61,8 +61,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          repository: ${{ github.repository }}
-          github-server-url: https://github.com
       - name: Restore cached build
         uses: actions/cache@v2
         with:
@@ -82,4 +80,5 @@ jobs:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           ls -la
+          git remote set-url origin ${{github.repositoryUrl}}
           npx semantic-release --dry-run --debug
