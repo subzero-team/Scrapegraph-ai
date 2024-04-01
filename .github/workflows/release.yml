@@ -80,5 +80,5 @@ jobs:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           ls -la
-          git config --set remote.origin.url = ${{github.repositoryUrl}}
+          git remote set-url origin ${{github.repositoryUrl}}
           npx semantic-release --dry-run --debug
