@@ -81,4 +81,4 @@ jobs:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           ls
-          npx semantic-release --dry-run
+          npx semantic-release --dry-run --debug
