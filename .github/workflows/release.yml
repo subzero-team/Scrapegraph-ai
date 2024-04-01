@@ -66,6 +66,11 @@ jobs:
         with:
             path: ./node_modules
             key: ${{ runner.os }}-release-${{ hashFiles('node_modules/**') }}
+      - name: Install git in alpine
+        run: |
+          apk update
+          apk upgrade
+          apk add git
       - name: Install node dependencies
         run: npm install semantic-release-pypi @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github @semantic-release/changelog conventional-changelog-conventionalcommits --no-save
         if: success()
