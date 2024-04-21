@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y git
-          git config --global --add safe.directory home/runner/work/Scrapegraph-ai/Scrapegraph-ai
+#          git config --global --add safe.directory home/runner/work/Scrapegraph-ai/Scrapegraph-ai
       - name: Install Python Env and Poetry
         uses: actions/setup-python@v5
         with:
@@ -94,7 +94,7 @@ jobs:
       - uses: cycjimmy/semantic-release-action@v4.1.0
         with:
           semantic_version: 23
-          #repository_url: ${{github.GITHUB_SERVER_URL}}/${{github.GITHUB_REPOSITORY}}.git
+#          repository_url: ${{github.GITHUB_SERVER_URL}}/${{github.GITHUB_REPOSITORY}}.git
           extra_plugins: |
             semantic-release-pypi
             @semantic-release/git 
