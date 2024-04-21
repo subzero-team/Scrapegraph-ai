@@ -1,5 +1,4 @@
 [tool.poetry]
-
 name = "subzero/scrapegraphai"
 version = "0.0.12b1"
 description = "A first semantic versioned Scrapegraph fork by subzero team"
@@ -8,6 +7,10 @@ readme = "README.md"
 homepage = "https://github.com/subzero-team/Scrapegraph-ai"
 repository = "https://github.com/subzero-team/Scrapegraph-ai"
 documentation = "https://github.com/subzero-team/Scrapegraph-ai"
+authors = [
+    "simone pulcini" <pulcini@prova.prova>",
+    "luigi corollo <corollo@prova.prova>"
+]
 keywords = ["scrapegraph", "scrapegraphai", "langchain", "ai", "artificial intelligence", "gpt", "machine learning", "rag", "nlp", "natural language processing", "openai", "scraping", "web scraping", "web scraping library", "web scraping tool", "webscraping", "graph"]
 classifiers = [
     "Intended Audience :: Developers",
@@ -15,7 +18,6 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-
 [tool.poetry.dependencies]
 python = ">3.9,<3.9.7 || >3.9.7,<3.12"
 langchain = "0.1.6"
