@@ -35,7 +35,6 @@ jobs:
         uses: actions/checkout@v4.1.1
         with:
           fetch-depth: 0
-          set-safe-directory: /home/runner/work/Scrapegraph-ai/Scrapegraph-ai
           persist-credentials: false
       - name: Build app
         run: |
@@ -96,7 +95,7 @@ jobs:
         with:
           semantic_version: 23
           #repository_url: ${{github.GITHUB_SERVER_URL}}/${{github.GITHUB_REPOSITORY}}.git
-          #repository_url: github.com/subzero-team/Scrapegraph-ai.git
+          repository_url: https://github.com/subzero-team/Scrapegraph-ai
           extra_plugins: |
             semantic-release-pypi
             @semantic-release/git 
