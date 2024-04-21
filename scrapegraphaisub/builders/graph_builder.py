@@ -138,7 +138,7 @@ class GraphBuilder:
             raise ImportError("The 'graphviz' library is required for this functionality. "
                               "Please install it from 'https://graphviz.org/download/'.")
 
-        graph = graphviz.Digraph(comment='ScrapeGraphAI Generated Graph', format=format,
+        graph = graphviz.Digraph(comment='scrapegraphaisub Generated Graph', format=format,
                                  node_attr={'color': 'lightblue2', 'style': 'filled'})
 
         graph_config = json_data["text"][0]

@@ -2,7 +2,7 @@
 Teest for convert_to_csv
 """
 import os
-from scrapegraphai.utils.convert_to_csv import convert_to_csv
+from scrapegraphaisub.utils.convert_to_csv import convert_to_csv
 
 
 def main():

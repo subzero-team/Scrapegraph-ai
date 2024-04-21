@@ -1,4 +1,4 @@
-scrapegraphai package
+scrapegraphaisub package
 ==============
 
 Subpackages
@@ -7,96 +7,96 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   scrapegraphai.graphs
-   scrapegraphai.nodes
+   scrapegraphaisub.graphs
+   scrapegraphaisub.nodes
 
 Submodules
 ----------
 
-scrapegraphai.class\_creator module
+scrapegraphaisub.class\_creator module
 ----------------------------
 
-.. automodule:: scrapegraphai.class_creator
+.. automodule:: scrapegraphaisub.class_creator
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.class\_generator module
+scrapegraphaisub.class\_generator module
 ------------------------------
 
-.. automodule:: scrapegraphai.class_generator
+.. automodule:: scrapegraphaisub.class_generator
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.convert\_to\_csv module
+scrapegraphaisub.convert\_to\_csv module
 ------------------------------
 
-.. automodule:: scrapegraphai.convert_to_csv
+.. automodule:: scrapegraphaisub.convert_to_csv
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.convert\_to\_json module
+scrapegraphaisub.convert\_to\_json module
 -------------------------------
 
-.. automodule:: scrapegraphai.convert_to_json
+.. automodule:: scrapegraphaisub.convert_to_json
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.dictionaries module
+scrapegraphaisub.dictionaries module
 --------------------------
 
-.. automodule:: scrapegraphai.dictionaries
+.. automodule:: scrapegraphaisub.dictionaries
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.getter module
+scrapegraphaisub.getter module
 --------------------
 
-.. automodule:: scrapegraphai.getter
+.. automodule:: scrapegraphaisub.getter
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.json\_getter module
+scrapegraphaisub.json\_getter module
 --------------------------
 
-.. automodule:: scrapegraphai.json_getter
+.. automodule:: scrapegraphaisub.json_getter
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.pydantic\_class module
+scrapegraphaisub.pydantic\_class module
 -----------------------------
 
-.. automodule:: scrapegraphai.pydantic_class
+.. automodule:: scrapegraphaisub.pydantic_class
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.remover module
+scrapegraphaisub.remover module
 ---------------------
 
-.. automodule:: scrapegraphai.remover
+.. automodule:: scrapegraphaisub.remover
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.request module
+scrapegraphaisub.request module
 ---------------------
 
-.. automodule:: scrapegraphai.request
+.. automodule:: scrapegraphaisub.request
    :members:
    :undoc-members:
    :show-inheritance:
 
-scrapegraphai.token\_calculator module
+scrapegraphaisub.token\_calculator module
 -------------------------------
 
-.. automodule:: scrapegraphai.token_calculator
+.. automodule:: scrapegraphaisub.token_calculator
    :members:
    :undoc-members:
    :show-inheritance:
@@ -104,7 +104,7 @@ scrapegraphai.token\_calculator module
 Module contents
 ---------------
 
-.. automodule:: scrapegraphai
+.. automodule:: scrapegraphaisub
    :members:
    :undoc-members:
    :show-inheritance:

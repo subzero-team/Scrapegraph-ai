@@ -3,7 +3,7 @@ Test for the remover method
 """
 import unittest
 
-from scrapegraphai.utils.remover import remover
+from scrapegraphaisub.utils.remover import remover
 
 
 class TestRemover(unittest.TestCase):

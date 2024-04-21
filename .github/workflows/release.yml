@@ -14,14 +14,11 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-#    container:
-#      image: nikolaik/python-nodejs:python3.9-nodejs20-alpine
     steps:
       - name: Install git
         run: |
           sudo apt update
           sudo apt install -y git
-#          git config --global --add safe.directory home/runner/work/Scrapegraph-ai/Scrapegraph-ai
       - name: Install Python Env and Poetry
         uses: actions/setup-python@v5
         with:
@@ -38,9 +35,8 @@ jobs:
           persist-credentials: false
       - name: Build app
         run: |
+          poetry install
           poetry build
-          git status
-          git remote -v
         id: build_cache
         if: success()
       - name: Cache build
@@ -60,43 +56,17 @@ jobs:
         github.event_name == 'push' && startsWith(github.ref,'refs/heads/pre') || 
         github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && github.event.pull_request.base.ref == 'main' || 
         github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && startsWith(github.event.pull_request.base.ref,  'refs/head/pre')
-#    container:
-#      image: nikolaik/python-nodejs:python3.9-nodejs20-alpine
     permissions:
-      contents: write # to be able to publish a GitHub release
-      issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to comment on released pull requests
-      id-token: write # to enable use of OIDC for npm provenance
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
     steps:
-#      - name: Install git in alpine
-#        run: |
-#          apk update
-#          apk upgrade
-#          apk add git
-#      - name: Checkout
-#        uses: actions/checkout@v4
-#        with:
-#          fetch-depth: 0
-#      - name: Restore cached build
-#        uses: actions/cache@v2
-#        with:
-#            path: ./dist
-#            key: ${{ runner.os }}-build-${{ hashFiles('dist/**') }}
-#      - name: Restore cached node modules
-#        uses: actions/cache@v2
-#       with:
-#            path: ./node_modules
-#            key: ${{ runner.os }}-release-${{ hashFiles('node_modules/**') }}
-#      - name: Install node dependencies
-#        run: npm install semantic-release-pypi @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github @semantic-release/changelog conventional-changelog-conventionalcommits --no-save
-#        if: success()
-#      - name: Release
       - name: Checkout repo
         uses: actions/checkout@v4.1.1
         with:
           fetch-depth: 0
           persist-credentials: false
-      
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4.1.0
         with:
@@ -112,6 +82,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-#        run: |
-#          git remote set-url origin ${{github.repositoryUrl}}
-#          npx semantic-release --dry-run --debug

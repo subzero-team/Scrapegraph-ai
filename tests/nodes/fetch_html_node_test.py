@@ -4,7 +4,7 @@ Tests for the class FetchHTMLNode
 import os
 import unittest
 from dotenv import load_dotenv
-from scrapegraphai.nodes import FetchHTMLNode
+from scrapegraphaisub.nodes import FetchHTMLNode
 
 load_dotenv()
 openai_key = os.getenv("OPENAI_APIKEY")

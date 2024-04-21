@@ -1,6 +1,6 @@
 """Module for making the RAG"""
 from trulens_eval import Feedback, OpenAI, Tru, Provider, Select, TruBasicApp
-from scrapegraphai.graphs import SmartScraperGraph
+from scrapegraphaisub.graphs import SmartScraperGraph
 
 
 class TrulensEvaluator:

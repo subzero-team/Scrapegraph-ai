@@ -4,8 +4,8 @@ Basic example of scraping pipeline using SmartScraper
 
 import os
 from dotenv import load_dotenv
-from scrapegraphai.models import OpenAIImageToText, OpenAITextToSpeech
-from scrapegraphai.utils import save_audio_from_bytes
+from scrapegraphaisub.models import OpenAIImageToText, OpenAITextToSpeech
+from scrapegraphaisub.utils import save_audio_from_bytes
 
 load_dotenv()
 openai_key = os.getenv("OPENAI_APIKEY")
@@ -25,7 +25,7 @@ config = {
 
 itt_model = OpenAIImageToText(config["itt_model"])
 img_to_text_result = itt_model.run(
-    "https://raw.githubusercontent.com/VinciGit00/Scrapegraph-ai/main/docs/assets/scrapegraphai_logo.png"
+    "https://raw.githubusercontent.com/VinciGit00/Scrapegraph-ai/main/docs/assets/scrapegraphaisub_logo.png"
     )
 
 print(f"Image description: {img_to_text_result}")

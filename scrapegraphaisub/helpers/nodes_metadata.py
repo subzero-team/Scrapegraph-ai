@@ -1,5 +1,5 @@
 """
-Nodes metadata for the scrapegraphai package.
+Nodes metadata for the scrapegraphaisub package.
 """
 
 nodes_metadata = {

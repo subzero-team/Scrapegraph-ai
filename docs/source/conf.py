@@ -14,7 +14,7 @@ import sys
 # import all the modules
 sys.path.insert(0, os.path.abspath('../../'))
 
-project = 'scrapegraphai'
+project = 'scrapegraphaisub'
 copyright = '2024, Marco Vinciguerra'
 author = 'Marco Vinciguerra'
 

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to scrapegraphai-ai's documentation!
+Welcome to scrapegraphaisub-ai's documentation!
 =======================================
 
 Here you will find all the information you need to get started.

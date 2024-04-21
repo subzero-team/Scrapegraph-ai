@@ -2,7 +2,7 @@
 Example of using convert_to_json function to save data in JSON format.
 """
 import os
-from scrapegraphai.utils.convert_to_json import convert_to_json
+from scrapegraphaisub.utils.convert_to_json import convert_to_json
 
 # Data to save in JSON format
 data_to_save = {

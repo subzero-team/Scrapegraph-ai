@@ -4,9 +4,9 @@ Module for testing the graph_from_text_example
 import os
 import unittest
 from unittest.mock import patch
-from scrapegraphai.models import OpenAI
-from scrapegraphai.graphs import BaseGraph
-from scrapegraphai.nodes import FetchTextNode, ParseNode, RAGNode, GenerateAnswerNodeFromRag
+from scrapegraphaisub.models import OpenAI
+from scrapegraphaisub.graphs import BaseGraph
+from scrapegraphaisub.nodes import FetchTextNode, ParseNode, RAGNode, GenerateAnswerNodeFromRag
 
 
 class TestCustomGraph(unittest.TestCase):

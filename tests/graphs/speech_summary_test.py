@@ -4,7 +4,7 @@ Module for testing SpeechSummaryGraph
 import os
 import unittest
 from dotenv import load_dotenv
-from scrapegraphai.graphs import SpeechSummaryGraph
+from scrapegraphaisub.graphs import SpeechSummaryGraph
 
 load_dotenv()
 

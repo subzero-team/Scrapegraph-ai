@@ -3,8 +3,8 @@ Module for making the tests
 """
 import os
 from dotenv import load_dotenv
-from scrapegraphai.models import OpenAI
-from scrapegraphai.nodes import FetchNode, ParseNode, RAGNode, GenerateAnswerNode
+from scrapegraphaisub.models import OpenAI
+from scrapegraphaisub.nodes import FetchNode, ParseNode, RAGNode, GenerateAnswerNode
 
 load_dotenv()
 

@@ -1,18 +1,18 @@
 """ 
-Module for testing convert_to_json inside the folder scrapegraphai/convert_to_json.py
+Module for testing convert_to_json inside the folder scrapegraphaisub/convert_to_json.py
 """
 import unittest
-from scrapegraphai.utils.convert_to_json import convert_to_json
+from scrapegraphaisub.utils.convert_to_json import convert_to_json
 
 
 class TestConvertToJSonFunction(unittest.TestCase):
     """ 
-    class for testing convert_to_json inside the folder scrapegraphai/convert_to_json.py
+    class for testing convert_to_json inside the folder scrapegraphaisub/convert_to_json.py
     """
 
     def test_get_json(self):
         """
-        function for testing convert_to_json inside the folder scrapegraphai/convert_to_json.py
+        function for testing convert_to_json inside the folder scrapegraphaisub/convert_to_json.py
         """
         example = {"trial": [1, 2, 3]}
         filename = "result"

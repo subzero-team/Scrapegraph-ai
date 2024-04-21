@@ -3,7 +3,7 @@ Module for evaluating the graph
 """
 import os
 from dotenv import load_dotenv
-from scrapegraphai.evaluators import TrulensEvaluator
+from scrapegraphaisub.evaluators import TrulensEvaluator
 
 load_dotenv()
 openai_key = os.getenv("OPENAI_APIKEY")

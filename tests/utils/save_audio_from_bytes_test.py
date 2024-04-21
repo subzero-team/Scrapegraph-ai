@@ -5,7 +5,7 @@ import unittest
 import os
 from tempfile import TemporaryDirectory
 from pathlib import Path
-from scrapegraphai.utils.save_audio_from_bytes import save_audio_from_bytes
+from scrapegraphaisub.utils.save_audio_from_bytes import save_audio_from_bytes
 
 
 class TestSaveAudioFromBytes(unittest.TestCase):
