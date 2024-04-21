@@ -85,7 +85,7 @@ jobs:
       - uses: cycjimmy/semantic-release-action@v4.1.0
         with:
           semantic_version: 23
-          repository_url: ${{github.GITHUB_SERVER_URL}}/${{github.GITHUB_REPOSITORY}}
+          repository_url: ${{github.GITHUB_SERVER_URL}}/${{github.GITHUB_REPOSITORY}}.git
           extra_plugins: |
             semantic-release-pypi
             @semantic-release/git 
