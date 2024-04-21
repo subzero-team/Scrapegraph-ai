@@ -1,3 +1,18 @@
+## [0.0.12-beta.2](https://github.com/subzero-team/Scrapegraph-ai/compare/v0.0.12-beta.1...v0.0.12-beta.2) (2024-04-21)
+
+
+### Bug Fixes
+
+* change name to scrapegraph ai ([97df57f](https://github.com/subzero-team/Scrapegraph-ai/commit/97df57f5bf5b496102246a9e8e924a6822a09637))
+* changed toml project name ([d82e324](https://github.com/subzero-team/Scrapegraph-ai/commit/d82e32424a75e122d25294b7ac6fc739b588414f))
+* polished yaml workflow ([9c7396d](https://github.com/subzero-team/Scrapegraph-ai/commit/9c7396dbfefc4c2e619ecc3298bd17d22933094f))
+* toml error ([4ba1912](https://github.com/subzero-team/Scrapegraph-ai/commit/4ba19126933cc5646c2e99c98ae71735165f3c25))
+
+
+### Build
+
+* changed toml file ([1cf5c70](https://github.com/subzero-team/Scrapegraph-ai/commit/1cf5c700fb91a19a49f1da8f611e2d6ebec993ce))
+
 ## [0.0.12-beta.1](https://github.com/subzero-team/Scrapegraph-ai/compare/v0.0.11...v0.0.12-beta.1) (2024-04-21)
 
 
