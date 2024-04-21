@@ -91,7 +91,14 @@ jobs:
 #        run: npm install semantic-release-pypi @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github @semantic-release/changelog conventional-changelog-conventionalcommits --no-save
 #        if: success()
 #      - name: Release
-      - uses: cycjimmy/semantic-release-action@v4.1.0
+      - name: Verify Repo
+        run: |
+            pwd
+            ls
+            git status
+            git remote -v
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4.1.0
         with:
           semantic_version: 23
           repository_url: https://github.com/subzero-team/Scrapegraph-ai.git
