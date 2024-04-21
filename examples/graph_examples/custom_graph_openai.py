@@ -4,9 +4,9 @@ Example of custom graph using existing nodes
 
 import os
 from dotenv import load_dotenv
-from scrapegraphai.models import OpenAI
-from scrapegraphai.graphs import BaseGraph
-from scrapegraphai.nodes import FetchNode, ParseNode, RAGNode, GenerateAnswerNode
+from scrapegraphaisub.models import OpenAI
+from scrapegraphaisub.graphs import BaseGraph
+from scrapegraphaisub.nodes import FetchNode, ParseNode, RAGNode, GenerateAnswerNode
 
 load_dotenv()
 openai_key = os.getenv("OPENAI_APIKEY")

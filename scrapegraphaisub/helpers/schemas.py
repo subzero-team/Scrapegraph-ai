@@ -1,10 +1,10 @@
 """
-Schemas representing the configuration of a graph or node in the ScrapeGraphAI library
+Schemas representing the configuration of a graph or node in the scrapegraphaisub library
 """
 
 graph_schema = {
-    "name": "ScrapeGraphAI Graph Configuration",
-    "description": "JSON schema for representing graphs in the ScrapeGraphAI library",
+    "name": "scrapegraphaisub Graph Configuration",
+    "description": "JSON schema for representing graphs in the scrapegraphaisub library",
     "type": "object",
     "properties": {
         "nodes": {

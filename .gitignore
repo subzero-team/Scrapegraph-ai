@@ -26,5 +26,5 @@ venv/
 *.pdf
 *.mp3
 *.sqlite
-examples/graph_examples/ScrapeGraphAI_generated_graph
+examples/graph_examples/scrapegraphaisub_generated_graph
 main.py

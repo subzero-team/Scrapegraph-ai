@@ -4,7 +4,7 @@ Basic example of scraping pipeline using SpeechSummaryGraph
 
 import os
 from dotenv import load_dotenv
-from scrapegraphai.graphs import SpeechGraph
+from scrapegraphaisub.graphs import SpeechGraph
 
 load_dotenv()
 openai_key = os.getenv("OPENAI_APIKEY")

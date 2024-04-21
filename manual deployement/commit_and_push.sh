@@ -21,7 +21,7 @@ cd ..
 commit_message="$1"
 
 # Run Pylint on the specified Python files
-pylint scrapegraphai/**/*.py scrapegraphai/*.py examples/**/*.py tests/**/*.py
+pylint scrapegraphaisub/**/*.py scrapegraphaisub/*.py examples/**/*.py tests/**/*.py
 #Make the pull
 git pull
 

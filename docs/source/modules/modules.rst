@@ -1,7 +1,7 @@
-scrapegraphai
+scrapegraphaisub
 =============
 
 .. toctree::
    :maxdepth: 4
 
-   scrapegraphai
+   scrapegraphaisub

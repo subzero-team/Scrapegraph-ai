@@ -1,7 +1,7 @@
 """ 
 Example of the remover method
 """
-from scrapegraphai.utils.remover import remover
+from scrapegraphaisub.utils.remover import remover
 
 HTML_CONTENT = """
 <html>

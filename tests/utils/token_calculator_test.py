@@ -2,7 +2,7 @@
 Test fo testing the tokenizer
 """
 import unittest
-from scrapegraphai.utils.token_calculator import truncate_text_tokens
+from scrapegraphaisub.utils.token_calculator import truncate_text_tokens
 
 
 class TestTruncateTextTokens(unittest.TestCase):

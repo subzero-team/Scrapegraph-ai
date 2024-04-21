@@ -3,7 +3,7 @@ Example of graph builder
 """
 import os
 from dotenv import load_dotenv
-from scrapegraphai.builders import GraphBuilder
+from scrapegraphaisub.builders import GraphBuilder
 
 load_dotenv()
 openai_key = os.getenv("OPENAI_APIKEY")
@@ -28,4 +28,4 @@ graph_json = graph_builder.build_graph()
 graphviz_graph = graph_builder.convert_json_to_graphviz(graph_json)
 
 # Save the graph to a file and open it in the default viewer
-graphviz_graph.render('ScrapeGraphAI_generated_graph', view=True)
+graphviz_graph.render('scrapegraphaisub_generated_graph', view=True)

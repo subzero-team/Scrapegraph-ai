@@ -4,9 +4,9 @@ Example of custom graph using Gemini Google model
 
 import os
 from dotenv import load_dotenv
-from scrapegraphai.models import Gemini
-from scrapegraphai.graphs import BaseGraph
-from scrapegraphai.nodes import FetchNode, ParseNode, RAGNode, GenerateAnswerNode
+from scrapegraphaisub.models import Gemini
+from scrapegraphaisub.graphs import BaseGraph
+from scrapegraphaisub.nodes import FetchNode, ParseNode, RAGNode, GenerateAnswerNode
 
 load_dotenv()
 gemini_key = os.getenv("GOOGLE_APIKEY")

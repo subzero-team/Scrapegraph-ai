@@ -1,7 +1,7 @@
 """ 
 Module for extracting the summary from the speach
 """
-from scrapegraphai.utils.save_audio_from_bytes import save_audio_from_bytes
+from scrapegraphaisub.utils.save_audio_from_bytes import save_audio_from_bytes
 from ..models import OpenAI, Gemini, OpenAITextToSpeech
 from .base_graph import BaseGraph
 from ..nodes import (

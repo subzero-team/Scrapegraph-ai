@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "subzero/scrapegraphai"
+name = "scrapegraphaisub"
 version = "0.0.12b1"
 description = "A first semantic versioned Scrapegraph fork by subzero team"
 authors = [

@@ -4,7 +4,7 @@ Module for testing SmartScraper class
 import os
 import unittest
 from dotenv import load_dotenv
-from scrapegraphai.graphs import SmartScraperGraph
+from scrapegraphaisub.graphs import SmartScraperGraph
 
 load_dotenv()
 

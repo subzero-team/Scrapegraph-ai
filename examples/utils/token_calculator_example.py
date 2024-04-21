@@ -1,7 +1,7 @@
 """
 Example for calclating the tokenizer
 """
-from scrapegraphai.utils.token_calculator import truncate_text_tokens
+from scrapegraphaisub.utils.token_calculator import truncate_text_tokens
 
 INPUT_TEXT = "http://nba.com"
 
