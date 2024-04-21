@@ -37,7 +37,10 @@ jobs:
           fetch-depth: 0
           set-safe-directory: /home/runner/work/Scrapegraph-ai/Scrapegraph-ai
       - name: Build app
-        run: poetry build
+        run: |
+          poetry build
+          git status
+          git remote -v
         id: build_cache
         if: success()
       - name: Cache build
@@ -101,8 +104,6 @@ jobs:
             @semantic-release/github 
             @semantic-release/changelog 
             conventional-changelog-conventionalcommits
-        
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
