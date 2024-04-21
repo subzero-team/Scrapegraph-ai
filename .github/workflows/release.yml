@@ -36,6 +36,7 @@ jobs:
         with:
           fetch-depth: 0
           set-safe-directory: /home/runner/work/Scrapegraph-ai/Scrapegraph-ai
+          persist-credentials: false
       - name: Build app
         run: |
           poetry build
