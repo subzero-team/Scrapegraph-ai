@@ -95,7 +95,6 @@ jobs:
         with:
           semantic_version: 23
           #repository_url: ${{github.GITHUB_SERVER_URL}}/${{github.GITHUB_REPOSITORY}}.git
-          repository_url: https://github.com/subzero-team/Scrapegraph-ai
           extra_plugins: |
             semantic-release-pypi
             @semantic-release/git 
