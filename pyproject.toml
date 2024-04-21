@@ -1,17 +1,13 @@
 [tool.poetry]
-name = "scrapegraphai"
+
+name = "subzero/scrapegraphai"
 version = "0.0.12b1"
-description = "A web scraping library based on LangChain which uses LLM and direct graph logic to create scraping pipelines."
-authors = [
-    "Marco Vinciguerra <mvincig11@gmail.com>",
-    "Marco Perini <perinim.98@gmail.com>",
-    "Lorenzo Padoan <lorenzo.padoan977@gmail.com>"
-]
+description = "A first semantic versioned Scrapegraph fork by subzero team"
 license = "MIT"
 readme = "README.md"
-homepage = "https://scrapegraph-ai.readthedocs.io/"
-repository = "https://github.com/VinciGit00/Scrapegraph-ai"
-documentation = "https://scrapegraph-doc.onrender.com/"
+homepage = "https://github.com/subzero-team/Scrapegraph-ai"
+repository = "https://github.com/subzero-team/Scrapegraph-ai"
+documentation = "https://github.com/subzero-team/Scrapegraph-ai"
 keywords = ["scrapegraph", "scrapegraphai", "langchain", "ai", "artificial intelligence", "gpt", "machine learning", "rag", "nlp", "natural language processing", "openai", "scraping", "web scraping", "web scraping library", "web scraping tool", "webscraping", "graph"]
 classifiers = [
     "Intended Audience :: Developers",
