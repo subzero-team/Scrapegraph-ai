@@ -53,9 +53,9 @@ jobs:
     environment: development
     if: | 
         github.event_name == 'push' && github.ref == 'refs/heads/main' || 
-        github.event_name == 'push' && startsWith(github.ref,'refs/heads/pre') || 
+        github.event_name == 'push' && github.ref == 'refs/heads/pre/beta' || 
         github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && github.event.pull_request.base.ref == 'main' || 
-        github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && startsWith(github.event.pull_request.base.ref,  'refs/head/pre')
+        github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged && github.event.pull_request.base.ref == 'pre/beta'
     permissions:
       contents: write
       issues: write
