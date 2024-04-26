@@ -1,3 +1,18 @@
+## [0.0.12-beta.3](https://github.com/subzero-team/Scrapegraph-ai/compare/v0.0.12-beta.2...v0.0.12-beta.3) (2024-04-26)
+
+
+### Bug Fixes
+
+* remove global permission ([035dc47](https://github.com/subzero-team/Scrapegraph-ai/commit/035dc478a2a16a75010ee1cd064af99f59bb3f73))
+
+
+### CI
+
+* branch name fixed ([7befb5c](https://github.com/subzero-team/Scrapegraph-ai/commit/7befb5c8ec755f03d548b3feaba775ff5fcd154a))
+* enforce triggers ([0664eb0](https://github.com/subzero-team/Scrapegraph-ai/commit/0664eb0d7c3c7272dec1a1830251786dd1fac274))
+* remove pull request trigger ([9ff84f7](https://github.com/subzero-team/Scrapegraph-ai/commit/9ff84f775bba670fea77186d6a8ba705983aaf68))
+* trigger relase ([41f1f15](https://github.com/subzero-team/Scrapegraph-ai/commit/41f1f15a821870e1b78b7695171769c9d67e8c20))
+
 ## [0.0.12-beta.2](https://github.com/subzero-team/Scrapegraph-ai/compare/v0.0.12-beta.1...v0.0.12-beta.2) (2024-04-21)
 
 
