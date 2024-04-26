@@ -1,3 +1,10 @@
+## [0.0.12-beta.4](https://github.com/subzero-team/Scrapegraph-ai/compare/v0.0.12-beta.3...v0.0.12-beta.4) (2024-04-26)
+
+
+### Bug Fixes
+
+* added latest stable versions ([2106c8d](https://github.com/subzero-team/Scrapegraph-ai/commit/2106c8dcef2f41644047eb8e93bf72984ed4b2a5))
+
 ## [0.0.12-beta.3](https://github.com/subzero-team/Scrapegraph-ai/compare/v0.0.12-beta.2...v0.0.12-beta.3) (2024-04-26)
 
 

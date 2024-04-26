@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "scrapegraphaisub"
-version = "0.0.12b3"
+version = "0.0.12b4"
 description = "A first semantic versioned Scrapegraph fork by subzero team"
 authors = [
     "simone pulcini <pulcini@prova.prova>",
