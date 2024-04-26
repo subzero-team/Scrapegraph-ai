@@ -5,7 +5,10 @@ on:
       - main
       - pre/*
   pull_request: 
-    types: [closed]
+    types: [closed] 
+    branches:
+      - main
+      - pre/*
 
 permissions:
   contents: write # for checkout
