@@ -10,8 +10,8 @@ on:
 #      - main
 #      - pre/*
 
-permissions:
-  contents: write # for checkout
+#permissions:
+#  contents: write # for checkout
 
 jobs:
   build:
